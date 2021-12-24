@@ -11,7 +11,7 @@ class MyHandler(FileSystemEventHandler):
 
 
 def move_file():
-    """Move all file with specified extension from folder_to_track to folder_destination"""
+    """Move all image file from folder_to_track to folder_destination"""
     for filename in os.listdir(folder_to_track):
         for ext in valid_extensions:
             if filename.endswith(ext):
